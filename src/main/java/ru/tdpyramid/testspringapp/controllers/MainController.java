@@ -5,18 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-    @GetMapping("/")
-    public String root() {
-        return "redirect:workers";
-    }
-
-    @GetMapping("/workers")
-    public String workers() {
-        return "workers";
-    }
-
-    @GetMapping("/animals")
-    public String animals() {
-        return "animals";
-    }
+//    @GetMapping("/workers")
+//    public String workers() {
+//        return "workers";
+//    }
+//
+//    @GetMapping("/animals")
+//    public String animals() {
+//        return "animals";
+//    }
 }
