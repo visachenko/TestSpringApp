@@ -6,7 +6,7 @@ import ru.tdpyramid.testspringapp.model.WorkerModel;
 import ru.tdpyramid.testspringapp.service.WorkersService;
 
 @RestController
-@RequestMapping("/workersList")
+@RequestMapping("/api/workersList")
 public class WorkersListRestController {
     private final WorkersService workersService;
 

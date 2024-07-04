@@ -1,8 +1,8 @@
 import AddItemForm from "../common/addItemForm.js";
 import AnimalTableItem from "./animalTableItem.js";
 
-const animalsApi = Vue.resource('/animalsList')
-const concreteAnimalApi = Vue.resource('/animalsList/{id}')
+const animalsApi = Vue.resource('/api/animalsList')
+const concreteAnimalApi = Vue.resource('/api/animalsList/{id}')
 
 export default {
         name: 'animals-table',

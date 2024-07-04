@@ -10,7 +10,7 @@ import ru.tdpyramid.testspringapp.model.WorkerAction;
 import ru.tdpyramid.testspringapp.service.WorkerActionService;
 
 @RestController
-@RequestMapping("/worker")
+@RequestMapping("/api/worker")
 public class WorkerActionsRestController {
     private final WorkerActionService workerActionService;
 

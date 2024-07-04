@@ -7,7 +7,7 @@ import ru.tdpyramid.testspringapp.model.AnimalModel;
 import ru.tdpyramid.testspringapp.service.AnimalsService;
 
 @RestController
-@RequestMapping("/animalsList")
+@RequestMapping("/api/animalsList")
 public class AnimalsListRestController {
     private final AnimalsService animalsService;
 

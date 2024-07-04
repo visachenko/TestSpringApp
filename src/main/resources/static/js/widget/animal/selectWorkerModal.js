@@ -1,6 +1,6 @@
 import SelectItemModal from "../common/selectItemModal.js";
 
-const workersApi = Vue.resource('/workersList')
+const workersApi = Vue.resource('/api/workersList')
 
 export default {
         name: 'select-worker-modal',

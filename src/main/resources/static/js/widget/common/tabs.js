@@ -2,7 +2,7 @@ const TabItem = Vue.component('tab-item', {
     props: ['id', 'title', 'hrefLink', 'active'],
     template: `
         <div class="tab">
-            <a v-if="active" key="id">{{ title }}</a>
+            <a v-if="active">{{ title }}</a>
             <a v-else :href="hrefLink" key="id">{{ title }}</a>
         </div>
     `
@@ -30,6 +30,7 @@ export default {
                     :hrefLink="item.link" 
                     :active="item.id === activeItemId" 
                     :title="item.title"
+                    :key="item.id"
                 ></tab-item>
             </div>
         </div>

@@ -3,7 +3,7 @@ import SelectAnimalModal from "./widget/worker/selectAnimalModal.js"
 import WorkersTable from "./widget/worker/workersTable.js"
 import Tabs from "./widget/common/tabs.js"
 
-const workerActionsApi = Vue.resource('/worker')
+const workerActionsApi = Vue.resource('/api/worker')
 
 const app = new Vue({
     el: '#workers',

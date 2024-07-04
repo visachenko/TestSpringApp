@@ -1,8 +1,8 @@
 import AddItemForm from "../common/addItemForm.js";
 import WorkerTableItem from "./workerTableItem.js";
 
-const workersApi = Vue.resource('/workersList')
-const concreteWorkersApi = Vue.resource('/workersList/{id}')
+const workersApi = Vue.resource('/api/workersList')
+const concreteWorkersApi = Vue.resource('/api/workersList/{id}')
 
 export default {
     name: 'workers-table',

@@ -1,6 +1,6 @@
 import SelectItemModal from "../common/selectItemModal.js";
 
-const animalsApi = Vue.resource('/animalsList')
+const animalsApi = Vue.resource('/api/animalsList')
 
 export default {
     name: 'select-animal-modal',
