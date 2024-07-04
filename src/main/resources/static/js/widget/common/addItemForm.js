@@ -15,13 +15,9 @@ export default {
         }
     },
     template: `
-        <tr>
-            <td>
-                <input id="name" type="text" v-model="newWorkerName"/>
-            </td>
-            <td>
-                <input type="submit" @click="save">
-            </td>
-        </tr>
+        <div class="add-item-form">
+            <input id="name" type="text" v-model="newWorkerName"/>
+             <input type="submit" @click="save">
+        </div>
     `
 }

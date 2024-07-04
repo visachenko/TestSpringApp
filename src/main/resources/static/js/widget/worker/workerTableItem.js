@@ -13,10 +13,12 @@ export default {
         <tr>
             <td>{{ id }}</td>
             <td>{{ name }}</td>
-            <td><button @click="showModal(id, 'FEED_ANIMAL')">Покормить животное</button></td>
-            <td><button @click="showModal(id, 'CLEAN_PRISON')">Почистить клетку</button></td>
-            <td><button @click="showModal(id, 'CLEAN_WALK_AREA')">Почистить вальер</button></td>
-            <td><button @click="deleteWorker(id)">Удалить</button></td>
+            <td>
+                <button @click="showModal(id, 'FEED_ANIMAL')">Покормить животное</button>
+                <button @click="showModal(id, 'CLEAN_PRISON')">Почистить клетку</button>
+                <button @click="showModal(id, 'CLEAN_WALK_AREA')">Почистить вальер</button>
+                <button @click="deleteWorker(id)">Удалить</button>
+            </td>
         </tr>
     `
 }

@@ -63,23 +63,26 @@ export default {
             }
         },
         template: `
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                </tr>
-                <animal-table-item
-                    v-for="animal in $data.animals"
-                    :id="animal.id"
-                    :name="animal.name"
-                    :key="animal.id"
-                    :prisoned="animal.prisoned"
-                    @show-modal="showModal"
-                    @send-to-prison="sendToPrison"
-                    @send-to-walking-area="sendToWalkingArea"
-                    @delete-animal="deleteAnimal">
-                </animal-table-item>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                    </tr>
+                    <animal-table-item
+                        v-for="animal in $data.animals"
+                        :id="animal.id"
+                        :name="animal.name"
+                        :key="animal.id"
+                        :prisoned="animal.prisoned"
+                        @show-modal="showModal"
+                        @send-to-prison="sendToPrison"
+                        @send-to-walking-area="sendToWalkingArea"
+                        @delete-animal="deleteAnimal">
+                    </animal-table-item>
+                </table>
                 <add-item-form @save-item="saveAnimal"></add-item-form>
-            </table>
-`
+            </div>
+            
+        `
 }

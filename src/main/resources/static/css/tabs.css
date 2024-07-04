@@ -1,0 +1,11 @@
+.tabs-container {
+    border: 1px solid #ff5252;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.tab {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}

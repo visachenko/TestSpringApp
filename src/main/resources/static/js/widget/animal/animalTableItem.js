@@ -24,10 +24,12 @@ export default {
         <tr>
             <td>{{ id }}</td>
             <td>{{ name }}</td>
-            <td><button @click="showModal(id, 'FEED_ANIMAL')">Покормить</button></td>
-            <td><if-button :disabled="prisoned" @click="sendToPrison(id)">В клетку</if-button></td>
-            <td><if-button :disabled="!prisoned" @click="sendToWalkingArea(id)">В вальер</if-button></td>
-            <td><button @click="deleteAnimal(id)">Удалить</button></td>
+            <td>
+                <button @click="showModal(id, 'FEED_ANIMAL')">Покормить</button>
+                <if-button :disabled="prisoned" @click="sendToPrison(id)">В клетку</if-button>
+                <if-button :disabled="!prisoned" @click="sendToWalkingArea(id)">В вальер</if-button>
+                <button @click="deleteAnimal(id)">Удалить</button>
+            </td>
         </tr>
 `
 }

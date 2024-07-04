@@ -1,0 +1,16 @@
+.table-container {
+    width: fit-content;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table-container > table {
+    border-collapse: collapse;
+}
+
+.table-container > table > tr > th,
+.table-container > table > tr > td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 6px;
+}
